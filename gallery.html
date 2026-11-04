@@ -22,10 +22,11 @@
 </head>
 <body class="woodmart-theme">
 
-  <!-- =========================================================================
-       1. Top Announcement Bar
-       ========================================================================= -->
-  <div class="revaj-topbar">
+  <div class="site-header-shell">
+    <!-- =========================================================================
+         1. Top Announcement Bar
+         ========================================================================= -->
+    <div class="revaj-topbar">
     <div class="container topbar-container">
       <div class="topbar-left">
         <div class="topbar-info-item">
@@ -73,51 +74,35 @@
       <nav class="revaj-nav" role="navigation" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-          
-          <!-- Mega Menu: Interior Design Services -->
-          <li class="nav-item dropdown-toggle">
-            <a href="index.html#services-hub" class="nav-link">INTERIOR SERVICES <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="nav-mega-dropdown">
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-couch" style="color:var(--kmsj-amber);"></i> Residential Turnkey</h4>
-                <ul class="mega-links-list">
-                  <li><a href="index.html#services-hub">Luxury 3BHK &amp; 4BHK Interiors</a></li>
-                  <li><a href="index.html#services-hub">Contemporary Luxury Villas</a></li>
-                  <li><a href="index.html#services-hub">Penthouse &amp; Terrace Suites</a></li>
-                  <li><a href="index.html#services-hub">Living &amp; Dining Architecture</a></li>
-                  <li><a href="index.html#services-hub">Custom Walk-in Wardrobes</a></li>
-                </ul>
+          <li class="nav-item nav-service-dropdown">
+            <a href="services.html" class="nav-link">SERVICES</a>
+            <div class="nav-dropdown" aria-label="Services menu">
+              <div class="nav-dropdown-column">
+                <h4>Paint &amp; Finishes</h4>
+                <a href="services.html#paint-finishes">Paint Dealers &amp; Wholesalers</a>
+                <a href="services.html#paint-finishes">Asian Paints &amp; Nerolac</a>
+                <a href="services.html#paint-finishes">Emulsion &amp; Distemper</a>
+                <a href="services.html#paint-finishes">Waterproof &amp; Spray Paint</a>
               </div>
-
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-kitchen-set" style="color:var(--kmsj-blue);"></i> Modular Architecture</h4>
-                <ul class="mega-links-list">
-                  <li><a href="index.html#services-hub">German Blum Modular Kitchens</a></li>
-                  <li><a href="index.html#services-hub">PU &amp; High-Gloss Acrylic Finishes</a></li>
-                  <li><a href="index.html#services-hub">Quartz &amp; Granite Countertops</a></li>
-                  <li><a href="index.html#services-hub">Blum Tandembox &amp; Soft-Close</a></li>
-                  <li><a href="index.html#services-hub">Smart Tall Pantries &amp; Organizers</a></li>
-                </ul>
+              <div class="nav-dropdown-column">
+                <h4>Interior &amp; Contracting</h4>
+                <a href="services.html#painting-contractors">Painting Contractors</a>
+                <a href="services.html#plaster-waterproofing">Wall Putty &amp; POP</a>
+                <a href="services.html#false-ceilings">False Ceiling &amp; POP</a>
+                <a href="services.html#design-architecture">Interior Design &amp; Architecture</a>
               </div>
-
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-layer-group" style="color:var(--kmsj-purple);"></i> Ceilings &amp; Finishes</h4>
-                <ul class="mega-links-list">
-                  <li><a href="index.html#services-hub">Saint-Gobain Gyproc Ceilings</a></li>
-                  <li><a href="index.html#services-hub">Magnetic Architectural Lighting</a></li>
-                  <li><a href="index.html#services-hub">Asian Paints Royale Luxury Stucco</a></li>
-                  <li><a href="index.html#services-hub">PU Leakproof Waterproofing</a></li>
-                  <li><a href="index.html#services-hub">Seamless Epoxy &amp; Italian Polish</a></li>
-                </ul>
+              <div class="nav-dropdown-column">
+                <h4>Structure &amp; Finish</h4>
+                <a href="services.html#flooring-elevation">Flooring &amp; Elevation</a>
+                <a href="services.html#modular-kitchen-furniture">Modular Kitchen &amp; Furniture</a>
+                <a href="services.html#hardware-plumbing">Hardware &amp; Plumbing</a>
+                <a href="services.html#electrical-lighting">Electrical &amp; Lighting</a>
               </div>
             </div>
           </li>
-
           <li class="nav-item"><a href="index.html#portfolio" class="nav-link">PORTFOLIO</a></li>
-          <li class="nav-item"><a href="index.html#transformation" class="nav-link">BEFORE &amp; AFTER</a></li>
           <li class="nav-item active"><a href="gallery.html" class="nav-link">GALLERY</a></li>
-          <li class="nav-item"><a href="why-us.html" class="nav-link">WHY US</a></li>
-          <li class="nav-item"><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
         </ul>
       </nav>
 
@@ -132,6 +117,7 @@
       </div>
     </div>
   </header>
+  </div>
 
   <!-- Mobile Drawer Menu -->
   <div class="revaj-mobile-drawer" id="mobileDrawer">
@@ -143,13 +129,10 @@
     </div>
     <div class="drawer-nav">
       <a href="index.html" class="drawer-link">HOME</a>
-      <a href="index.html#disciplines" class="drawer-link">DESIGN DISCIPLINES</a>
+      <a href="services.html" class="drawer-link">SERVICES</a>
       <a href="index.html#portfolio" class="drawer-link">PORTFOLIO</a>
-      <a href="index.html#transformation" class="drawer-link">BEFORE &amp; AFTER</a>
       <a href="gallery.html" class="drawer-link active">GALLERY</a>
-      <a href="why-us.html" class="drawer-link">WHY CHOOSE US</a>
-      <a href="index.html#faq" class="drawer-link">FAQ</a>
-      <a href="index.html#contact" class="drawer-link">BOOK CONSULTATION</a>
+      <a href="contact.html" class="drawer-link">BOOK CONSULTATION</a>
       <a href="tel:8707014932" class="drawer-link phone"><i class="fa-solid fa-phone"></i> +91 8707014932</a>
       <a href="https://wa.me/918707014932" class="btn btn-whatsapp-mobile"><i class="fa-brands fa-whatsapp"></i> Chat with Design Consultant</a>
     </div>
@@ -601,7 +584,84 @@
             </div>
           </div>
 
+          <!-- Video 1: Exterior facade walk-through -->
+          <div class="site-gallery-card" data-category="elevations">
+            <div class="gallery-img-wrap site-gallery-video">
+              <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-elevation-night-2.png">
+                <source src="WhatsApp%20Video%202026-10-31%20at%202.10.43%20PM.mp4" type="video/mp4">
+              </video>
+              <span class="gallery-badge"><i class="fa-solid fa-video"></i> Site Video</span>
+            </div>
+            <div class="gallery-card-content">
+              <div class="gallery-meta-row">
+                <span><i class="fa-solid fa-location-dot"></i> Exterior Elevation</span>
+                <span>&bull;</span>
+                <span><i class="fa-solid fa-circle-check"></i> Live Progress</span>
+              </div>
+              <h3 class="gallery-card-title">Facade Illumination &amp; Exterior Finish Walkthrough</h3>
+              <p class="gallery-card-desc">Architectural night glow, layered brick detailing, and warm accent lighting applied across the complete elevation mass.</p>
+            </div>
+          </div>
+
+          <!-- Video 2: POP ceiling progress -->
+          <div class="site-gallery-card" data-category="ceilings">
+            <div class="gallery-img-wrap site-gallery-video">
+              <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-pop-ceiling-1.png">
+                <source src="WhatsApp%20Video%202026-10-31%20at%202.10.45%20PM.mp4" type="video/mp4">
+              </video>
+              <span class="gallery-badge"><i class="fa-solid fa-video"></i> Site Video</span>
+            </div>
+            <div class="gallery-card-content">
+              <div class="gallery-meta-row">
+                <span><i class="fa-solid fa-location-dot"></i> POP Ceiling Work</span>
+                <span>&bull;</span>
+                <span><i class="fa-solid fa-circle-check"></i> Execution Stage</span>
+              </div>
+              <h3 class="gallery-card-title">False Ceiling Installation &amp; Cove Lighting Detail</h3>
+              <p class="gallery-card-desc">Layered gypsum framing, cove profiling, and integrated light placement for a premium finished ceiling look.</p>
+            </div>
+          </div>
+
+          <!-- Video 3: Master bedroom final styling -->
+          <div class="site-gallery-card" data-category="interiors">
+            <div class="gallery-img-wrap site-gallery-video">
+              <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-interior-master-bedroom-5.png">
+                <source src="WhatsApp%20Video%202026-10-31%20at%202.10.44%20PM.mp4" type="video/mp4">
+              </video>
+              <span class="gallery-badge"><i class="fa-solid fa-video"></i> Site Video</span>
+            </div>
+            <div class="gallery-card-content">
+              <div class="gallery-meta-row">
+                <span><i class="fa-solid fa-location-dot"></i> Luxury Bedroom</span>
+                <span>&bull;</span>
+                <span><i class="fa-solid fa-circle-check"></i> Completed</span>
+              </div>
+              <h3 class="gallery-card-title">Interior Styling &amp; Luxury Master Suite Final View</h3>
+              <p class="gallery-card-desc">Wardrobe joinery, ambient wall lights, and soft layered styling combine into a fully finished luxury bedroom aesthetic.</p>
+            </div>
+          </div>
+
+          <!-- Video 4: Residential exterior progress -->
+          <div class="site-gallery-card" data-category="elevations">
+            <div class="gallery-img-wrap site-gallery-video">
+              <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-elevation-day-1.png">
+                <source src="WhatsApp%20Video%202026-10-31%20at%202.10.46%20PM.mp4" type="video/mp4">
+              </video>
+              <span class="gallery-badge"><i class="fa-solid fa-video"></i> Site Video</span>
+            </div>
+            <div class="gallery-card-content">
+              <div class="gallery-meta-row">
+                <span><i class="fa-solid fa-location-dot"></i> Residential Site</span>
+                <span>&bull;</span>
+                <span><i class="fa-solid fa-circle-check"></i> On-Site Execution</span>
+              </div>
+              <h3 class="gallery-card-title">Exterior Elevation Execution From Daylight Progress</h3>
+              <p class="gallery-card-desc">Progress photos and live capture of texture application, finish layering, and site-quality craftsmanship on residence façades.</p>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
@@ -653,9 +713,14 @@
   <!-- =========================================================================
        Floating WhatsApp Widget
        ========================================================================= -->
-  <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20am%20viewing%20your%20site%20gallery%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="floating-whatsapp-widget" title="Chat with Design Studio">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  <div class="floating-action-stack">
+    <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20am%20viewing%20your%20site%20gallery%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="floating-whatsapp-widget" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:8707014932" class="floating-call-widget" title="Call Design Studio" aria-label="Call KMSJ Interiors">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
 
   <!-- =========================================================================
        Luxury Studio Footer
@@ -684,14 +749,14 @@
 
         <!-- Col 2 -->
         <div class="footer-col">
-          <h4 class="footer-col-title">DESIGN DISCIPLINES</h4>
+          <h4 class="footer-col-title">SERVICE CATALOGUE</h4>
           <ul class="footer-menu">
-            <li><a href="index.html#services-hub">Turnkey Luxury Living &amp; Villas</a></li>
-            <li><a href="index.html#services-hub">Bespoke Modular Kitchens (Blum)</a></li>
-            <li><a href="index.html#services-hub">Saint-Gobain Acoustic Ceilings</a></li>
-            <li><a href="index.html#services-hub">Asian Paints Royale Stucco Textures</a></li>
-            <li><a href="index.html#services-hub">PU Waterproofing &amp; Epoxy Floors</a></li>
-            <li><a href="index.html#services-hub">Commercial ACP Elevation &amp; Glazing</a></li>
+            <li><a href="services.html">Turnkey Luxury Living &amp; Villas</a></li>
+            <li><a href="services.html">Bespoke Modular Kitchens (Blum)</a></li>
+            <li><a href="services.html">Saint-Gobain Acoustic Ceilings</a></li>
+            <li><a href="services.html">Asian Paints Royale Stucco Textures</a></li>
+            <li><a href="services.html">PU Waterproofing &amp; Epoxy Floors</a></li>
+            <li><a href="services.html">Commercial ACP Elevation &amp; Glazing</a></li>
           </ul>
         </div>
 
@@ -704,7 +769,7 @@
             <li><a href="index.html#portfolio">Monolith Quartz Kitchens</a></li>
             <li><a href="index.html#portfolio">Grand Royale Master Suites</a></li>
             <li><a href="index.html#portfolio">Gyproc Magnetic Track Ceilings</a></li>
-            <li><a href="index.html#transformation">Before &amp; After Handover</a></li>
+            <li><a href="services.html">Service Catalogue</a></li>
           </ul>
         </div>
 
@@ -749,7 +814,11 @@
           <span>|</span>
           <a href="why-us.html">Why Choose Us</a>
           <span>|</span>
-          <a href="index.html#faq">FAQs</a>
+          <a href="terms-conditions.html">Terms &amp; Conditions</a>
+          <span>|</span>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="https://indianexportwebmart.com/" target="_blank" rel="noopener" class="credit-brand">Created by India Export Webmart</a>
         </div>
       </div>
     </div>
@@ -758,30 +827,38 @@
   <!-- Scripts -->
   <script type="module" src="script.js"></script>
   <script>
+    const galleryInitialVisible = Number.MAX_SAFE_INTEGER;
+    let galleryCurrentCategory = 'all';
+    let galleryVisibleCount = galleryInitialVisible;
+
+    function renderGalleryCards() {
+      const cards = document.querySelectorAll('.site-gallery-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const matches = galleryCurrentCategory === 'all' || cat === galleryCurrentCategory;
+        const shouldShow = matches;
+
+        card.style.display = shouldShow ? 'flex' : 'none';
+        card.style.opacity = shouldShow ? '1' : '0';
+        card.style.transform = shouldShow ? 'translateY(0)' : 'translateY(10px)';
+      });
+    }
+
     // Gallery Filter function
     function filterGallery(category, btn) {
-      const cards = document.querySelectorAll('.site-gallery-card');
       const buttons = document.querySelectorAll('.gallery-filter-btn');
 
       buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      if (btn) btn.classList.add('active');
 
-      cards.forEach(card => {
-        const cardCat = card.getAttribute('data-category');
-        if (category === 'all' || cardCat === category) {
-          card.style.display = 'flex';
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            card.style.transition = 'all 0.3s ease';
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 30);
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      galleryCurrentCategory = category;
+      galleryVisibleCount = galleryInitialVisible;
+      renderGalleryCards();
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderGalleryCards();
+    });
 
     // Lightbox Modal functions
     function openLightbox(imgSrc, title, desc) {

@@ -18,10 +18,11 @@
 </head>
 <body class="home-revaj">
 
-  <!-- =========================================================================
-       1. Top Announcement Bar (WoodMart Authentic Topbar with Live Marquee)
-       ========================================================================= -->
-  <div class="revaj-topbar">
+  <div class="site-header-shell">
+    <!-- =========================================================================
+         1. Top Announcement Bar (WoodMart Authentic Topbar with Live Marquee)
+         ========================================================================= -->
+    <div class="revaj-topbar">
     <div class="container topbar-container">
       <div class="topbar-left">
         <div class="topbar-info-item">
@@ -37,7 +38,7 @@
       </div>
 
       <div class="topbar-right">
-        <a href="#services-hub" class="topbar-link">
+        <a href="services.html" class="topbar-link">
           <i class="fa-solid fa-book-open" style="color:var(--kmsj-amber); font-size:11px;"></i>
           <span>Design Catalogue</span>
         </a>
@@ -47,7 +48,7 @@
           <span>WhatsApp Studio</span>
         </a>
         <span class="topbar-divider"></span>
-        <a href="#contact" class="topbar-link">
+        <a href="contact.html" class="topbar-link">
           <i class="fa-solid fa-calculator" style="color:var(--kmsj-amber); font-size:11px;"></i>
           <span>Cost Estimator</span>
         </a>
@@ -69,59 +70,40 @@
       <nav class="revaj-nav" role="navigation" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-item active"><a href="#" class="nav-link">HOME</a></li>
-          
-          <!-- Mega Menu: Interior Design Services -->
-          <li class="nav-item dropdown-toggle">
-            <a href="#services-hub" class="nav-link">INTERIOR SERVICES <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="nav-mega-dropdown">
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-couch" style="color:var(--kmsj-amber);"></i> Residential Turnkey</h4>
-                <ul class="mega-links-list">
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Luxury 3BHK')">Luxury 3BHK &amp; 4BHK Interiors</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Villa')">Contemporary Luxury Villas</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Penthouse')">Penthouse &amp; Terrace Suites</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Living Room')">Living &amp; Dining Architecture</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Wardrobes')">Custom Walk-in Wardrobes</a></li>
-                </ul>
+          <li class="nav-item nav-service-dropdown">
+            <a href="services.html" class="nav-link">SERVICES</a>
+            <div class="nav-dropdown" aria-label="Services menu">
+              <div class="nav-dropdown-column">
+                <h4>Paint &amp; Finishes</h4>
+                <a href="services.html#paint-finishes">Paint Dealers &amp; Wholesalers</a>
+                <a href="services.html#paint-finishes">Asian Paints &amp; Nerolac</a>
+                <a href="services.html#paint-finishes">Emulsion &amp; Distemper</a>
+                <a href="services.html#paint-finishes">Waterproof &amp; Spray Paint</a>
               </div>
-
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-kitchen-set" style="color:var(--kmsj-blue);"></i> Modular Architecture</h4>
-                <ul class="mega-links-list">
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Modular Kitchen')">German Blum Modular Kitchens</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Acrylic')">PU &amp; High-Gloss Acrylic Finishes</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Quartz')">Quartz &amp; Granite Countertops</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Hardware')">Blum Tandembox &amp; Soft-Close</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Pantry')">Smart Tall Pantries &amp; Organizers</a></li>
-                </ul>
+              <div class="nav-dropdown-column">
+                <h4>Interior &amp; Contracting</h4>
+                <a href="services.html#painting-contractors">Painting Contractors</a>
+                <a href="services.html#plaster-waterproofing">Wall Putty &amp; POP</a>
+                <a href="services.html#false-ceilings">False Ceiling &amp; POP</a>
+                <a href="services.html#design-architecture">Interior Design &amp; Architecture</a>
               </div>
-
-              <div class="mega-column">
-                <h4><i class="fa-solid fa-layer-group" style="color:var(--kmsj-purple);"></i> Ceilings &amp; Finishes</h4>
-                <ul class="mega-links-list">
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('False Ceiling')">Saint-Gobain Gyproc Ceilings</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Track Lights')">Magnetic Architectural Lighting</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Asian Paints')">Asian Paints Royale Luxury Stucco</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Waterproofing')">PU Leakproof Waterproofing</a></li>
-                  <li><a href="#services-hub" onclick="quickFilterDirectory('Epoxy')">Seamless Epoxy &amp; Italian Polish</a></li>
-                </ul>
+              <div class="nav-dropdown-column">
+                <h4>Structure &amp; Finish</h4>
+                <a href="services.html#flooring-elevation">Flooring &amp; Elevation</a>
+                <a href="services.html#modular-kitchen-furniture">Modular Kitchen &amp; Furniture</a>
+                <a href="services.html#hardware-plumbing">Hardware &amp; Plumbing</a>
+                <a href="services.html#electrical-lighting">Electrical &amp; Lighting</a>
               </div>
             </div>
           </li>
-
           <li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-          <li class="nav-item"><a href="#transformation" class="nav-link">BEFORE &amp; AFTER</a></li>
           <li class="nav-item"><a href="gallery.html" class="nav-link">GALLERY</a></li>
-          <li class="nav-item"><a href="why-us.html" class="nav-link">WHY US</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
         </ul>
       </nav>
 
       <!-- Header Tools & Consultation CTA -->
       <div class="header-tools">
-        <button class="tool-btn" id="openSearchBtn" title="Search Studio Designs" aria-label="Search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
         <a href="https://wa.me/918707014932" target="_blank" rel="noopener" class="tool-btn whatsapp-tool" aria-label="Chat with Studio on WhatsApp" title="WhatsApp Studio">
           <i class="fa-brands fa-whatsapp" style="color:#25d366; font-size:20px;"></i>
         </a>
@@ -131,36 +113,8 @@
       </div>
     </div>
   </header>
-
-  <!-- Mobile Search Bar -->
-  <div class="mobile-search-bar">
-    <div class="container">
-      <form class="mobile-search-form" onsubmit="handleSearch(event)">
-        <input type="text" id="mobileSearchInput" placeholder="Search: Luxury 3BHK, Modular Kitchen, Master Suite, Gyproc Ceiling, Italian Marble..." aria-label="Search">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-      </form>
-    </div>
   </div>
 
-  <!-- Fullscreen Search Overlay -->
-  <div class="search-overlay" id="searchOverlay">
-    <div class="search-overlay-content">
-      <button class="search-close" id="closeSearchBtn">&times;</button>
-      <h3>Search KMSJ Design Studio &amp; Interior Services</h3>
-      <form class="search-overlay-form" onsubmit="handleSearch(event)">
-        <input type="text" id="overlaySearchInput" placeholder="Type keywords: Modular Kitchen, False Ceiling, Royale Stucco, Turnkey 3BHK, Blum Hardware, Epoxy..." autofocus>
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
-      <div style="margin-top:20px; font-size:12.5px; color:#888;">
-        Trending Searches: 
-        <a href="javascript:void(0)" onclick="quickSearch('Modular Kitchen')" style="color:var(--kmsj-amber); margin: 0 6px;">Modular Kitchen</a> | 
-        <a href="javascript:void(0)" onclick="quickSearch('Turnkey')" style="color:var(--kmsj-amber); margin: 0 6px;">Turnkey 3BHK</a> | 
-        <a href="javascript:void(0)" onclick="quickSearch('False Ceiling')" style="color:var(--kmsj-amber); margin: 0 6px;">False Ceiling</a> | 
-        <a href="javascript:void(0)" onclick="quickSearch('Royale Stucco')" style="color:var(--kmsj-amber); margin: 0 6px;">Royale Stucco</a> | 
-        <a href="javascript:void(0)" onclick="quickSearch('Blum')" style="color:var(--kmsj-amber); margin: 0 6px;">Blum Joinery</a>
-      </div>
-    </div>
-  </div>
 
   <!-- Mobile Drawer Menu -->
   <div class="revaj-mobile-drawer" id="mobileDrawer">
@@ -172,13 +126,10 @@
     </div>
     <div class="drawer-nav">
       <a href="#" class="drawer-link active">HOME</a>
-      <a href="#disciplines" class="drawer-link">DESIGN DISCIPLINES</a>
+      <a href="services.html" class="drawer-link">SERVICES</a>
       <a href="#portfolio" class="drawer-link">PORTFOLIO</a>
-      <a href="#transformation" class="drawer-link">BEFORE &amp; AFTER</a>
       <a href="gallery.html" class="drawer-link">GALLERY</a>
-      <a href="why-us.html" class="drawer-link">WHY CHOOSE US</a>
-      <a href="#faq" class="drawer-link">FAQ</a>
-      <a href="#contact" class="drawer-link">BOOK CONSULTATION</a>
+      <a href="contact.html" class="drawer-link">BOOK CONSULTATION</a>
       <a href="tel:8707014932" class="drawer-link phone"><i class="fa-solid fa-phone"></i> +91 8707014932</a>
       <a href="https://wa.me/918707014932" class="btn btn-whatsapp-mobile"><i class="fa-brands fa-whatsapp"></i> Chat with Design Consultant</a>
     </div>
@@ -192,8 +143,7 @@
       <div class="hero-slider-wrapper" id="heroSlider">
         
         <!-- Slide 1: Turnkey Luxury Interiors -->
-        <div class="hero-slide active" style="background-image: url('assets/images/luxury-3bhk.jpg');">
-          <div class="hero-overlay"></div>
+        <div class="hero-slide active" style="background-image: url('assets/images/gallery/hero-bedroom-1.png');">
           <div class="container hero-container">
             <div class="hero-content">
               <span class="hero-badge-pill"><i class="fa-solid fa-crown"></i> EST. 2017 • 45+ YEARS EXPERIENCE • CEO: JAI JAIN</span>
@@ -230,8 +180,7 @@
         </div>
 
         <!-- Slide 2: Modular Kitchens & Wardrobes -->
-        <div class="hero-slide" style="background-image: url('assets/images/modular-kitchen.jpg');">
-          <div class="hero-overlay"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/gallery/hero-bedroom-2.png');">
           <div class="container hero-container">
             <div class="hero-content">
               <span class="hero-badge-pill"><i class="fa-solid fa-kitchen-set"></i> GERMAN BLUM ARCHITECTURE</span>
@@ -264,8 +213,7 @@
         </div>
 
         <!-- Slide 3: Ceilings & Lighting -->
-        <div class="hero-slide" style="background-image: url('assets/images/false-ceiling.jpg');">
-          <div class="hero-overlay"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/gallery/hero-bedroom-3.png');">
           <div class="container hero-container">
             <div class="hero-content">
               <span class="hero-badge-pill"><i class="fa-solid fa-lightbulb"></i> AMBIENT LIGHTING &amp; CEILING DESIGN</span>
@@ -276,7 +224,7 @@
                 Saint-Gobain Gyproc false ceiling engineering, magnetic architectural track lights, cove indirect ambient lighting, and bespoke POP cornice detailing for luxury living rooms.
               </p>
               <div class="hero-btn-group">
-                <a href="#services-hub" class="btn btn-hero-solid"><i class="fa-solid fa-layer-group"></i> View Ceiling Profiles</a>
+                <a href="#portfolio" class="btn btn-hero-solid"><i class="fa-solid fa-layer-group"></i> View Ceiling Profiles</a>
                 <a href="#contact" class="btn btn-hero-outline"><i class="fa-solid fa-calculator"></i> Calculate Ceiling Estimate</a>
               </div>
               <div class="hero-stats-row">
@@ -308,6 +256,253 @@
         <span class="dot active" data-index="0"></span>
         <span class="dot" data-index="1"></span>
         <span class="dot" data-index="2"></span>
+      </div>
+    </section>
+
+    <section class="hero-brand-strip" aria-label="Featured material partners">
+      <div class="container">
+        <div class="hero-brand-row">
+          <div class="hero-brand-track">
+            <div class="hero-brand-badge hero-brand-gyproc">
+              <span class="brand-mark">G</span>
+              <span>GYPROC</span>
+            </div>
+            <div class="hero-brand-badge hero-brand-hettich">
+              <span class="brand-mark">H</span>
+              <span>HETTICH</span>
+            </div>
+            <div class="hero-brand-badge hero-brand-gyproc">
+              <span class="brand-mark">G</span>
+              <span>GYPROC</span>
+            </div>
+            <div class="hero-brand-badge hero-brand-hettich">
+              <span class="brand-mark">H</span>
+              <span>HETTICH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-service-summary">
+      <div class="container">
+        <p>
+          We provide complete Interior Designing, Home Renovation, Painting, Construction, Building Materials, Interior Products, Furniture, Modular Kitchen, False Ceiling, Flooring, Waterproofing, Plumbing, Electrical, Hardware, Sanitaryware, Lighting, Wall Decor, POP, Wall Putty, Architectural Designing, Elevation Designing, Turnkey Projects, Home Improvement and All Types of Residential &amp; Commercial Interior Solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Popular Service Keywords / Search Tags (Below Hero Banner)
+         ========================================================================= -->
+    <section class="keyword-cloud-section">
+      <div class="container">
+        <div class="keyword-section-header">
+          <span class="section-kicker">Popular Search Terms</span>
+          <h2>Interior, Painting &amp; Construction Services in Kanpur</h2>
+        </div>
+
+        <div class="keyword-grid">
+          <div class="keyword-card">
+            <h3>Paint Dealers &amp; Wholesalers</h3>
+            <div class="keyword-tags">
+              <span>Paint Wholesalers – Indigo</span>
+              <span>Paint Dealers – Indigo</span>
+              <span>Paint Dealers – Asian Paints</span>
+              <span>Paint Wholesalers – Asian Paints</span>
+              <span>Paint Dealers – Kansai Nerolac</span>
+              <span>Paint Wholesalers – Kansai Nerolac</span>
+              <span>Emulsion Paint Dealers</span>
+              <span>Distemper Paint Dealers</span>
+              <span>Primer Paint Dealers</span>
+              <span>Plastic Paint Dealers</span>
+              <span>Waterproof Paint Dealers</span>
+              <span>Spray Paint Dealers</span>
+              <span>Paint Wholesalers</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Painting Services &amp; Contractors</h3>
+            <div class="keyword-tags">
+              <span>Painting Contractors</span>
+              <span>Painting Contractors For Residential</span>
+              <span>House Painters</span>
+              <span>Painting Services</span>
+              <span>Spray Painting Services</span>
+              <span>Paint Contractors</span>
+              <span>Texture Painting Contractors</span>
+              <span>Renovation Painting Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Wall Putty &amp; POP Services</h3>
+            <div class="keyword-tags">
+              <span>Wall Putty Contractors</span>
+              <span>Wall Putty Dealers – Birla White</span>
+              <span>Wall Putty Wholesalers</span>
+              <span>Wall Putty Dealers – JK Cement</span>
+              <span>Plaster Of Paris Dealers</span>
+              <span>POP Contractors</span>
+              <span>POP Contractors For Residential</span>
+              <span>Pop Cornice Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Waterproofing Services</h3>
+            <div class="keyword-tags">
+              <span>PU Waterproofing Contractors</span>
+              <span>Waterproofing Contractors</span>
+              <span>Waterproofing Painting Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>False Ceiling Services</h3>
+            <div class="keyword-tags">
+              <span>False Ceiling Contractors</span>
+              <span>POP False Ceiling Contractors</span>
+              <span>PVC False Ceiling Contractors</span>
+              <span>Gypsum False Ceiling Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Interior Designing &amp; Architecture</h3>
+            <div class="keyword-tags">
+              <span>Interior Designers</span>
+              <span>Interior Designers For Furniture</span>
+              <span>Architectural Designers</span>
+              <span>Turnkey Project For Interior Designers</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Turnkey Projects &amp; Construction</h3>
+            <div class="keyword-tags">
+              <span>Turnkey Projects</span>
+              <span>Turnkey Contractors</span>
+              <span>Turnkey Project Contractors</span>
+              <span>Construction Contractors</span>
+              <span>Building Contractors</span>
+              <span>Renovation Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Flooring &amp; Tile Services</h3>
+            <div class="keyword-tags">
+              <span>Tile Contractors</span>
+              <span>Epoxy Flooring Contractors</span>
+              <span>Epoxy Paint Dealers</span>
+              <span>Marble Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Elevation &amp; Exterior Designing</h3>
+            <div class="keyword-tags">
+              <span>Elevation Contractors</span>
+              <span>ACP Elevation Services</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Modular Kitchen &amp; Furniture</h3>
+            <div class="keyword-tags">
+              <span>Modular Kitchen Contractors</span>
+              <span>Kitchen Sink Dealers</span>
+              <span>Furniture Hardware Dealers</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Hardware &amp; Fittings</h3>
+            <div class="keyword-tags">
+              <span>Hardware Dealers</span>
+              <span>Hardware Shops</span>
+              <span>Hardware Fitting Dealers</span>
+              <span>Hardware Wholesalers</span>
+              <span>Hand Tool Dealers</span>
+              <span>Door Fitting Dealers</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Plumbing &amp; Sanitaryware</h3>
+            <div class="keyword-tags">
+              <span>Plumbing Contractors</span>
+              <span>Plumbers</span>
+              <span>Sanitaryware Dealers</span>
+              <span>Bathroom Fitting Dealers</span>
+              <span>Bathroom Accessory Dealers</span>
+              <span>Wash Basin Dealers</span>
+              <span>Water Tank Dealers</span>
+              <span>PVC Pipe Dealers</span>
+              <span>Pipe Dealers</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Electrical &amp; Lighting Services</h3>
+            <div class="keyword-tags">
+              <span>Electrical Contractors</span>
+              <span>Lighting Contractors</span>
+            </div>
+          </div>
+
+          <div class="keyword-card">
+            <h3>Construction Materials &amp; Chemicals</h3>
+            <div class="keyword-tags">
+              <span>Construction Chemical Dealers</span>
+              <span>Borewell Contractors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Real Project Media Showcase (All uploaded images & videos)
+         ========================================================================= -->
+    <section class="project-media-section">
+      <div class="container">
+        <div class="media-section-header">
+          <span class="section-kicker">Real Project Media</span>
+          <h2>Photos &amp; Site Videos from Our Studio Work</h2>
+        </div>
+
+        <div class="media-grid">
+          <img src="assets/images/gallery/site-work-elevation-day-1.png" alt="KMSJ elevation day work" loading="lazy">
+          <img src="assets/images/gallery/site-work-elevation-facade-3.png" alt="KMSJ facade work" loading="lazy">
+          <img src="assets/images/gallery/site-work-elevation-night-1.png" alt="Night elevation work" loading="lazy">
+          <img src="assets/images/gallery/site-work-elevation-residential-1.png" alt="Residential elevation site work" loading="lazy">
+          <img src="assets/images/gallery/site-work-interior-master-bedroom-5.png" alt="Master bedroom interior work" loading="lazy">
+          <img src="assets/images/gallery/site-work-pop-ceiling-1.png" alt="False ceiling pop work" loading="lazy">
+          <img src="assets/images/gallery/site-work-pop-ceiling-2.png" alt="POP ceiling detail" loading="lazy">
+          <img src="assets/images/gallery/site-work-pop-ceiling-3.png" alt="POP ceiling texture work" loading="lazy">
+          <img src="assets/images/gallery/site-work-texture-boundary-wall-1.jpg" alt="Texture boundary wall" loading="lazy">
+          <img src="assets/images/gallery/site-work-texture-brick-relief-4.jpg" alt="Brick relief texture" loading="lazy">
+          <img src="assets/images/gallery/site-work-texture-finish-1.jpg" alt="Final texture finish" loading="lazy">
+          <img src="assets/images/gallery/site-work-texture-horizontal-grooves-3.jpg" alt="Horizontal groove texture" loading="lazy">
+        </div>
+
+        <div class="video-grid">
+          <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-elevation-night-2.png">
+            <source src="WhatsApp%20Video%202026-10-31%20at%202.10.43%20PM.mp4" type="video/mp4">
+          </video>
+          <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-elevation-night-1.png">
+            <source src="WhatsApp%20Video%202026-10-31%20at%202.10.44%20PM.mp4" type="video/mp4">
+          </video>
+          <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-pop-ceiling-1.png">
+            <source src="WhatsApp%20Video%202026-10-31%20at%202.10.45%20PM.mp4" type="video/mp4">
+          </video>
+          <video controls playsinline preload="metadata" muted loop poster="assets/images/gallery/site-work-elevation-day-1.png">
+            <source src="WhatsApp%20Video%202026-10-31%20at%202.10.46%20PM.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </section>
 
@@ -437,134 +632,15 @@
                 <i class="fa-solid fa-award"></i> ARCHITECTURAL EXCELLENCE
               </div>
               <h2 class="heritage-focus-title">45+ Years of Industry Experience</h2>
+              <div class="heritage-company-label">About Our Company</div>
               <p class="heritage-focus-desc">
-                Decades of master contracting heritage, specialized in luxury turnkey residences, German joinery engineering, Saint-Gobain acoustic ceilings, and precision craftsmanship across Kanpur &amp; Uttar Pradesh.
+                KMSJ Interiors, formerly J.S Enterprises, is a trusted turnkey interior and construction studio established on <strong>31st March 2017</strong> under the leadership of Founder &amp; CEO <strong>Jai Jain</strong>. With a legacy spanning <strong>45+ years</strong> in contracting, civil execution, renovation, and premium architectural detailing, we transform homes, villas, and commercial spaces with precision, elegance, and lasting value.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         5. Architectural Interior Design Disciplines
-         ========================================================================= -->
-    <section class="architectural-disciplines-section" id="disciplines">
-      <div class="container">
-        <div class="section-title-wrap text-center mb-40">
-          <span class="editorial-tag"><i class="fa-solid fa-gem"></i> BESPOKE ARCHITECTURAL CRAFTSMANSHIP</span>
-          <h2 class="woodmart-heading text-center">
-            <span class="underline-accent">Signature Interior</span> Disciplines &amp; Verticals
-          </h2>
-          <p class="section-subtext">Comprehensive turnkey execution backed by German-engineered fittings, certified authentic materials, and dedicated project management across Kanpur &amp; Uttar Pradesh.</p>
-        </div>
-
-        <div class="disciplines-grid">
-          <!-- Card 1: Turnkey Living & Penthouses -->
-          <div class="discipline-card" onclick="filterPortfolio('penthouses')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/luxury-3bhk.jpg" alt="Turnkey Residences & Penthouses" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">01</span>
-            </div>
-            <div class="discipline-content">
-              <h3>Turnkey Residences &amp; Penthouses</h3>
-              <p>Complete luxury 3BHK, 4BHK and independent villa architectural execution from bare shell to final styling.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> 45-Day Milestone Delivery</span>
-                <span><i class="fa-solid fa-check"></i> 3D Spatial Renders</span>
+              <div class="heritage-company-points">
+                <span><i class="fa-solid fa-check"></i> Luxury turnkey interiors &amp; renovation</span>
+                <span><i class="fa-solid fa-check"></i> German joinery, false ceilings &amp; modular design</span>
+                <span><i class="fa-solid fa-check"></i> Authentic materials, project control &amp; on-time delivery</span>
               </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Card 2: Contemporary Modular Kitchens -->
-          <div class="discipline-card" onclick="filterPortfolio('kitchens')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/modular-kitchen.jpg" alt="German Blum Modular Kitchens" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">02</span>
-            </div>
-            <div class="discipline-content">
-              <h3>German Blum Modular Kitchens</h3>
-              <p>Precision-engineered kitchen suites featuring Blum Tandembox runners, quartz monolithic islands, and acrylic finishes.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> Austrian Blum Fittings</span>
-                <span><i class="fa-solid fa-check"></i> Scratch-Proof Acrylic</span>
-              </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Card 3: Master Bedroom Architecture -->
-          <div class="discipline-card" onclick="filterPortfolio('suites')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/luxury-master-bedroom.jpg" alt="Master Bedroom Suites" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">03</span>
-            </div>
-            <div class="discipline-content">
-              <h3>Master Bedroom Suites</h3>
-              <p>Serene bedroom architecture with custom fluted wall paneling, acoustic headboards, and warm 3000K indirect cove illumination.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> Custom Fluted Louvers</span>
-                <span><i class="fa-solid fa-check"></i> Ambient Cove Illumination</span>
-              </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Card 4: Walk-in Wardrobes -->
-          <div class="discipline-card" onclick="filterPortfolio('suites')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/luxury-walkin-wardrobe.jpg" alt="Haute Couture Walk-in Wardrobes" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">04</span>
-            </div>
-            <div class="discipline-content">
-              <h3>Haute Couture Walk-in Wardrobes</h3>
-              <p>Floor-to-ceiling smoked glass wardrobes, integrated sensor profile LEDs, and bespoke velvet jewelry organization.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> Smoked Tinted Glass</span>
-                <span><i class="fa-solid fa-check"></i> Vertical Recessed LEDs</span>
-              </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Card 5: False Ceilings & Lighting -->
-          <div class="discipline-card" onclick="filterPortfolio('ceilings')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/false-ceiling.jpg" alt="Acoustic False Ceilings & Lighting" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">05</span>
-            </div>
-            <div class="discipline-content">
-              <h3>Acoustic Ceilings &amp; Magnetic Lights</h3>
-              <p>Saint-Gobain Gyproc ceiling architecture, concealed 48V magnetic track lighting channels, and indirect ambient coves.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> Saint-Gobain Certified</span>
-                <span><i class="fa-solid fa-check"></i> 48V Magnetic Track Profiles</span>
-              </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Card 6: Terraces & Facades -->
-          <div class="discipline-card" onclick="filterPortfolio('penthouses')">
-            <div class="discipline-img-wrap">
-              <img src="assets/images/penthouse-terrace.jpg" alt="Penthouse Terraces & Facades" loading="lazy">
-              <div class="discipline-overlay"></div>
-              <span class="discipline-num">06</span>
-            </div>
-            <div class="discipline-content">
-              <h3>Penthouse Terraces &amp; Facades</h3>
-              <p>Luxury al-fresco rooftop decks, hardwood decking, Dr. Fixit PU waterproofing, and architectural facade cladding.</p>
-              <div class="discipline-features">
-                <span><i class="fa-solid fa-check"></i> Weather-Proof Decking</span>
-                <span><i class="fa-solid fa-check"></i> 10-Yr Waterproofing Bond</span>
-              </div>
-              <a href="#portfolio" class="discipline-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -599,7 +675,7 @@
           <!-- Project 1: The Sky Villa Penthouse -->
           <article class="portfolio-item-card" data-category="penthouses">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/luxury-3bhk.jpg" alt="The Sky Villa Penthouse, Civil Lines Kanpur" loading="lazy">
+              <img src="assets/images/gallery/site-work-elevation-residential-1.png" alt="The Sky Villa Penthouse, Civil Lines Kanpur" loading="lazy">
               <span class="portfolio-badge">Civil Lines, Kanpur</span>
             </div>
             <div class="portfolio-card-body">
@@ -631,7 +707,7 @@
           <!-- Project 2: The Monolith Quartz Kitchen -->
           <article class="portfolio-item-card" data-category="kitchens">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/modular-kitchen.jpg" alt="The Monolith Quartz Kitchen, Swaroop Nagar" loading="lazy">
+              <img src="assets/images/gallery/site-work-pop-ceiling-2.png" alt="The Monolith Quartz Kitchen, Swaroop Nagar" loading="lazy">
               <span class="portfolio-badge">Swaroop Nagar, Kanpur</span>
             </div>
             <div class="portfolio-card-body">
@@ -663,7 +739,7 @@
           <!-- Project 3: The Grand Royale Master Suite -->
           <article class="portfolio-item-card" data-category="suites">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/luxury-master-bedroom.jpg" alt="The Grand Royale Master Suite, Gomti Nagar" loading="lazy">
+              <img src="assets/images/gallery/site-work-interior-master-bedroom-5.png" alt="The Grand Royale Master Suite, Gomti Nagar" loading="lazy">
               <span class="portfolio-badge">Gomti Nagar, Lucknow</span>
             </div>
             <div class="portfolio-card-body">
@@ -695,7 +771,7 @@
           <!-- Project 4: Haute Couture Smoked Glass Wardrobes -->
           <article class="portfolio-item-card" data-category="suites">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/luxury-walkin-wardrobe.jpg" alt="Haute Couture Smoked Glass Wardrobes, Tilak Nagar" loading="lazy">
+              <img src="assets/images/gallery/site-work-interior-master-bedroom-5.png" alt="Haute Couture Smoked Glass Wardrobes, Tilak Nagar" loading="lazy">
               <span class="portfolio-badge">Tilak Nagar, Kanpur</span>
             </div>
             <div class="portfolio-card-body">
@@ -727,7 +803,7 @@
           <!-- Project 5: Acoustic Ceiling & Magnetic Tracks -->
           <article class="portfolio-item-card" data-category="ceilings">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/false-ceiling.jpg" alt="Acoustic Ceiling & Magnetic Tracks, Arya Nagar" loading="lazy">
+              <img src="assets/images/gallery/site-work-pop-ceiling-1.png" alt="Acoustic Ceiling & Magnetic Tracks, Arya Nagar" loading="lazy">
               <span class="portfolio-badge">Arya Nagar, Kanpur</span>
             </div>
             <div class="portfolio-card-body">
@@ -759,7 +835,7 @@
           <!-- Project 6: The Sky Lounge & Penthouse Deck -->
           <article class="portfolio-item-card" data-category="penthouses">
             <div class="portfolio-thumb-wrap">
-              <img src="assets/images/penthouse-terrace.jpg" alt="The Sky Lounge & Penthouse Deck, Swaran Jayanti Vihar" loading="lazy">
+              <img src="assets/images/gallery/site-work-elevation-night-1.png" alt="The Sky Lounge & Penthouse Deck, Swaran Jayanti Vihar" loading="lazy">
               <span class="portfolio-badge">Swaran Jayanti Vihar, Kanpur</span>
             </div>
             <div class="portfolio-card-body">
@@ -787,341 +863,6 @@
               </div>
             </div>
           </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         NEW: Interactive Before & After Transformation Comparison Slider
-         ========================================================================= -->
-    <section class="before-after-section" id="transformation">
-      <div class="container">
-        <div class="section-title-wrap text-center mb-30">
-          <span class="editorial-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> 45-DAY TURNKEY METAMORPHOSIS</span>
-          <h2 class="woodmart-heading text-center">
-            From Concrete Bare Shell to <span class="underline-accent">Luxury Living Reality</span>
-          </h2>
-          <p class="section-subtext">Drag the interactive slider below to witness how KMSJ Interiors converts an unfinished bare-shell property into a magazine-worthy luxury residence in 45 days.</p>
-        </div>
-
-        <div class="ba-slider-container">
-          <div class="ba-comparison-wrapper" id="baWrapper">
-            <!-- After Image (Base) -->
-            <div class="ba-image-layer ba-after-layer">
-              <img src="assets/images/luxury-3bhk.jpg" alt="After: KMSJ Turnkey Handover" class="ba-img">
-              <span class="ba-badge-label ba-label-after"><i class="fa-solid fa-gem"></i> AFTER: KMSJ 45-Day Handover</span>
-            </div>
-
-            <!-- Before Image (Overlay clipped by slider) -->
-            <div class="ba-image-layer ba-before-layer" id="baBeforeLayer" style="width: 50%;">
-              <img src="assets/images/bare-shell-before.jpg" alt="Before: Raw Concrete Shell" class="ba-img">
-              <span class="ba-badge-label ba-label-before"><i class="fa-solid fa-helmet-safety"></i> BEFORE: Raw Concrete Shell</span>
-            </div>
-
-            <!-- Draggable Handle Divider -->
-            <div class="ba-handle" id="baHandle" style="left: 50%;">
-              <div class="ba-handle-line"></div>
-              <div class="ba-handle-circle">
-                <i class="fa-solid fa-left-right"></i>
-              </div>
-              <div class="ba-handle-line"></div>
-            </div>
-
-            <!-- Native Range Slider for smooth touch & drag accessibility -->
-            <input type="range" min="0" max="100" value="50" class="ba-range-slider" id="baRangeSlider" aria-label="Before and After Comparison Slider" oninput="updateBeforeAfter(this.value)">
-          </div>
-
-          <!-- Bottom Metric Highlights -->
-          <div class="ba-metrics-row">
-            <div class="ba-metric-item">
-              <div class="metric-icon"><i class="fa-solid fa-calendar-check"></i></div>
-              <div class="metric-info">
-                <strong>45-Day Turnaround</strong>
-                <span>Milestone-backed delivery timeline</span>
-              </div>
-            </div>
-            <div class="ba-metric-item">
-              <div class="metric-icon"><i class="fa-solid fa-certificate"></i></div>
-              <div class="metric-info">
-                <strong>100% Genuine Specs</strong>
-                <span>Blum, Asian Paints &amp; Saint-Gobain</span>
-              </div>
-            </div>
-            <div class="ba-metric-item">
-              <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
-              <div class="metric-info">
-                <strong>10-Year Warranty</strong>
-                <span>Complete post-handover peace of mind</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         8. Interactive Service Matrix Hub (Curated Architectural Interior Disciplines)
-         ========================================================================= -->
-    <section class="services-directory-section" id="services-hub">
-      <div class="container">
-        <div class="text-center mb-40">
-          <h2 class="woodmart-heading text-center">
-            <span class="underline-accent">Interior Architecture</span> &amp; Turnkey Disciplines
-          </h2>
-          <p class="section-subtext">Certified execution verticals, German joinery engineering, and end-to-end luxury project delivery across Kanpur, Lucknow &amp; Uttar Pradesh.</p>
-        </div>
-
-        <!-- Search & Filter Toolbar -->
-        <div class="service-hub-toolbar">
-          <div class="service-hub-search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="directoryLiveSearch" placeholder="Filter disciplines (e.g. Modular Kitchen, False Ceiling, Royale Stucco, Turnkey...)" oninput="handleDirectorySearch(this.value)">
-          </div>
-
-          <div class="directory-filter-bar">
-            <button class="directory-filter-btn active" onclick="filterDirectory('all')">
-              <i class="fa-solid fa-layer-group"></i> All Disciplines
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('turnkey')">
-              <i class="fa-solid fa-kitchen-set"></i> Turnkey Residences
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('hardware')">
-              <i class="fa-solid fa-cube"></i> Modular Joinery
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('ceilings')">
-              <i class="fa-solid fa-border-all"></i> Ceilings &amp; Lighting
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('paints')">
-              <i class="fa-solid fa-paint-roller"></i> Royale Finishes
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('waterproofing')">
-              <i class="fa-solid fa-shield-halved"></i> Waterproofing &amp; Epoxy
-            </button>
-            <button class="directory-filter-btn" onclick="filterDirectory('civil')">
-              <i class="fa-solid fa-building"></i> Facades &amp; MEP
-            </button>
-          </div>
-        </div>
-
-        <!-- Rich Service Matrix Cards Grid -->
-        <div class="services-matrix-grid" id="servicesMatrixGrid">
-
-          <!-- 1. Turnkey Luxury Residences -->
-          <div class="service-matrix-card" data-cat="turnkey" data-search="turnkey luxury residences 3bhk 4bhk penthouse villa interior turnkey project contractors">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge turnkey">TURNKEY STUDIO</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-gem"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Turnkey Luxury Residences &amp; Villas</h4>
-              <p>Complete end-to-end architectural execution from bare shell to final styling with dedicated project managers and milestone tracking.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-clock"></i> 45-Day Guaranteed Delivery</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20am%20interested%20in%20a%20Turnkey%20Residential%20Project." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 2. German Blum Modular Kitchens -->
-          <div class="service-matrix-card" data-cat="hardware" data-search="modular kitchen blum tandembox soft close acrylic pu kitchen designers">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge wholesale">GERMAN SPECS</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-kitchen-set"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Bespoke Modular Kitchens (Blum Joinery)</h4>
-              <p>Anti-scratch acrylic and PU lacquered modular kitchens, Blum Austria soft-close hardware, quartz islands, and ergonomic pantry units.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> 3D CAD Visualization</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20want%20to%20design%20a%20Modular%20Kitchen." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 3. Saint-Gobain Gyproc False Ceilings -->
-          <div class="service-matrix-card" data-cat="ceilings" data-search="saint gobain gyproc false ceiling magnetic track lights cove lighting pop cornice">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge contracting">ACOUSTIC &amp; COVE</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-border-all"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Saint-Gobain Gyproc False Ceilings</h4>
-              <p>Engineered GI perimeter framework, acoustic sound insulation, concealed magnetic track channels, and indirect ambient LED cove lighting.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-ruler-combined"></i> Zero-Crack Guarantee</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20False%20Ceiling%20and%20Lighting%20design." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 4. Royale Luxury Stucco & Italian Textures -->
-          <div class="service-matrix-card" data-cat="paints" data-search="asian paints royale luxury stucco marmorino italian texture wall art painting">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge turnkey">ROYALE ATELIER</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-paint-roller"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Royale Luxury Stucco &amp; Italian Textures</h4>
-              <p>Master artisanal craftsmanship for Marmorino stucco, metallic Venetian textures, microcement walls, and airless high-precision PU finishes.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-brush"></i> Master Artisans</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20want%20Royale%20Stucco%20and%20Italian%20Textures." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 5. Bespoke Sliding & Walk-in Wardrobes -->
-          <div class="service-matrix-card" data-cat="hardware" data-search="walk in wardrobe sliding glass wardrobe bespoke joinery cabinetry">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge wholesale">LUXURY JOINERY</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-door-closed"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Bespoke Sliding &amp; Walk-in Wardrobes</h4>
-              <p>Floor-to-ceiling tinted glass wardrobes, integrated sensor profile lighting, velvet jewelry organization, and soft-closing concealed mechanisms.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-layer-group"></i> 100% Water-Resistant</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20custom%20Walk-in%20Wardrobes." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 6. PU Waterproofing Membrane -->
-          <div class="service-matrix-card" data-cat="waterproofing" data-search="dr fixit pu waterproofing terrace balcony leak proof membrane contractors">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge contracting">10-YR GUARANTEE</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Dr. Fixit PU RoofKote Terrace Waterproofing</h4>
-              <p>Polyurethane elastomeric liquid membranes for terraces, podiums, and sunken master baths with certified 10-year bonded warranty.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-certificate"></i> Certified 10-Yr Bond</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20PU%20Terrace%20Waterproofing." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 7. High-Gloss Seamless Epoxy Flooring -->
-          <div class="service-matrix-card" data-cat="waterproofing" data-search="seamless epoxy flooring metallic 3d high gloss commercial floor coating">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge contracting">SEAMLESS FLOOR</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-spray-can"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Seamless High-Gloss Epoxy Flooring</h4>
-              <p>Self-leveling architectural epoxy floors, metallic cloud effects, commercial cleanrooms, and scratch-resistant high-gloss finishes.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-ruler"></i> From 2mm - 4mm</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20am%20interested%20in%20Epoxy%20Flooring." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 8. Architectural Hardware & Smart Locks -->
-          <div class="service-matrix-card" data-cat="hardware" data-search="blum hardware smart digital door lock mortise handles concealed hinges">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge wholesale">CONCEALED SYSTEMS</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-key"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Architectural Hardware &amp; Smart Security</h4>
-              <p>Austrian Blum &amp; German Hettich concealed hinges, biometrics digital mortise smart locks, brass handles, and heavy-duty sliding systems.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-shield-check"></i> Lifetime Hardware Spec</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20Architectural%20Hardware%20and%20Smart%20Locks." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 9. Commercial ACP Facades & Glazing -->
-          <div class="service-matrix-card" data-cat="civil" data-search="acp elevation commercial facade spider glazing structural glass aludecor">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge contracting">MODERN FACADES</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-building"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Commercial ACP Facades &amp; Structural Glazing</h4>
-              <p>Aludecor fire-rated aluminum composite louvers, spider structural glazing, acoustic facade engineering, and exterior elevation design.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-compass-drafting"></i> 3D Elevation Modeling</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20ACP%20Elevation%20and%20Facade%20Contracting." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 10. Designer Quartz Sinks & Fixtures -->
-          <div class="service-matrix-card" data-cat="hardware" data-search="quartz sink wash basin sanitaryware countertop luxury fittings">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge wholesale">DESIGNER FIXTURES</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-faucet-drip"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Designer Quartz Sinks &amp; Sanitary Suites</h4>
-              <p>Undermount composite granite quartz sinks, luxury countertop stone wash basins, concealed thermostatic mixers, and modern plumbing architecture.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-bath"></i> Anti-Scratch Quartz</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20Designer%20Quartz%20Sinks%20and%20Sanitary%20Fittings." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 11. Complete Turnkey Project Management -->
-          <div class="service-matrix-card" data-cat="turnkey" data-search="turnkey project management residential renovation boq single point contractor">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge turnkey">SINGLE-POINT KEY</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Turnkey Project Management (End-to-End)</h4>
-              <p>Trusted execution partnership for homeowners and architects — covering civil masonry, MEP, joinery, false ceiling, and final handover.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-handshake"></i> Itemized BOQ Contract</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20want%20to%20discuss%20Turnkey%20Project%20Management." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
-
-          <!-- 12. Architectural Renovation & Civil MEP -->
-          <div class="service-matrix-card" data-cat="civil" data-search="structural renovation civil contractors concealed mep wiring electrical lighting">
-            <div class="service-matrix-header">
-              <span class="service-matrix-badge contracting">CIVIL &amp; MEP</span>
-              <div class="service-matrix-icon"><i class="fa-solid fa-hammer"></i></div>
-            </div>
-            <div class="service-matrix-body">
-              <h4>Architectural Renovation &amp; Civil MEP</h4>
-              <p>Structural layout modifications, certified concealed fire-resistant electrical networks, acoustic insulation, and plumbing redesign.</p>
-            </div>
-            <div class="service-matrix-footer">
-              <span class="service-price-tag"><i class="fa-solid fa-hard-hat"></i> Verified Engineers</span>
-              <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20need%20Civil%20Renovation%20and%20MEP%20Contractors." target="_blank" rel="noopener" class="service-btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Consult
-              </a>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -1363,17 +1104,18 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="eqName">Your Full Name</label>
-                  <input type="text" id="eqName" placeholder="e.g. Rajesh Kumar" required>
+                  <input type="text" id="eqName" placeholder="" required>
                 </div>
                 <div class="form-group">
                   <label for="eqPhone">Mobile / WhatsApp Number</label>
-                  <input type="tel" id="eqPhone" placeholder="+91 98765 43210" required>
+                  <input type="tel" id="eqPhone" placeholder="" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="eqService">Primary Interior Vertical</label>
                   <select id="eqService">
+                    <option value="" selected>Select an option</option>
                     <option value="Turnkey 3BHK / 4BHK Luxury Residence">Turnkey 3BHK / 4BHK Luxury Residence</option>
                     <option value="Contemporary Modular Kitchen (Blum Architecture)">Contemporary Modular Kitchen (Blum Architecture)</option>
                     <option value="Saint-Gobain False Ceiling & Magnetic Track Lights">Saint-Gobain False Ceiling & Magnetic Track Lights</option>
@@ -1388,6 +1130,7 @@
                 <div class="form-group">
                   <label for="eqProjectScale">Property Type / Area Scale</label>
                   <select id="eqProjectScale">
+                    <option value="" selected>Select an option</option>
                     <option value="Residential Apartment (2BHK / 3BHK)">Residential Apartment (2BHK / 3BHK)</option>
                     <option value="Luxury Penthouse / Duplex">Luxury Penthouse / Duplex</option>
                     <option value="Independent Villa / Kothi">Independent Villa / Kothi</option>
@@ -1398,7 +1141,7 @@
               </div>
               <div class="form-group">
                 <label for="eqMessage">Project Location &amp; Design Preferences</label>
-                <textarea id="eqMessage" rows="3" placeholder="Tell us your property location, preferred interior style (e.g. Modern Minimalist, Neoclassical, Luxury Contemporary), or expected handover date..."></textarea>
+                <textarea id="eqMessage" rows="3" placeholder=""></textarea>
               </div>
               <button type="submit" class="btn btn-submit-enquiry">
                 <i class="fa-solid fa-paper-plane"></i> Request Studio Consultation &amp; Estimate
@@ -1414,9 +1157,14 @@
   <!-- =========================================================================
        13. Floating WhatsApp & Studio Concierge Widget
        ========================================================================= -->
-  <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20would%20like%20to%20discuss%20an%20interior%20design%20consultation." target="_blank" rel="noopener" class="floating-whatsapp-widget" title="Chat with Design Studio">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  <div class="floating-action-stack">
+    <a href="https://wa.me/918707014932?text=Hello%20KMSJ%20Interiors,%20I%20would%20like%20to%20discuss%20an%20interior%20design%20consultation." target="_blank" rel="noopener" class="floating-whatsapp-widget" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:8707014932" class="floating-call-widget" title="Call Design Studio" aria-label="Call KMSJ Interiors">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
 
   <!-- =========================================================================
        14. Luxury Studio Footer
@@ -1445,14 +1193,14 @@
 
         <!-- Col 2 -->
         <div class="footer-col">
-          <h4 class="footer-col-title">DESIGN DISCIPLINES</h4>
+          <h4 class="footer-col-title">SERVICE CATALOGUE</h4>
           <ul class="footer-menu">
-            <li><a href="#services-hub" onclick="filterDirectory('turnkey')">Turnkey Luxury Living &amp; Villas</a></li>
-            <li><a href="#services-hub" onclick="filterDirectory('hardware')">Bespoke Modular Kitchens (Blum)</a></li>
-            <li><a href="#services-hub" onclick="filterDirectory('ceilings')">Saint-Gobain Acoustic Ceilings</a></li>
-            <li><a href="#services-hub" onclick="filterDirectory('paints')">Asian Paints Royale Stucco Textures</a></li>
-            <li><a href="#services-hub" onclick="filterDirectory('waterproofing')">PU Waterproofing &amp; Epoxy Floors</a></li>
-            <li><a href="#services-hub" onclick="filterDirectory('civil')">Commercial ACP Elevation &amp; Glazing</a></li>
+            <li><a href="services.html">Turnkey Luxury Living &amp; Villas</a></li>
+            <li><a href="services.html">Bespoke Modular Kitchens (Blum)</a></li>
+            <li><a href="services.html">Saint-Gobain Acoustic Ceilings</a></li>
+            <li><a href="services.html">Asian Paints Royale Stucco Textures</a></li>
+            <li><a href="services.html">PU Waterproofing &amp; Epoxy Floors</a></li>
+            <li><a href="services.html">Commercial ACP Elevation &amp; Glazing</a></li>
           </ul>
         </div>
 
@@ -1508,9 +1256,11 @@
         <div class="footer-bottom-links">
           <a href="why-us.html">Why Choose Us</a>
           <span>|</span>
-          <a href="#transformation">Milestone Guarantee</a>
+          <a href="terms-conditions.html">Terms &amp; Conditions</a>
           <span>|</span>
-          <a href="#faq">10-Yr Warranty Terms</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="https://indianexportwebmart.com/" target="_blank" rel="noopener" class="credit-brand">Created by India Export Webmart</a>
         </div>
       </div>
     </div>

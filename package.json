@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "KMSJ Interiors - Turnkey Architectural Contracting & Portfolio",
   "scripts": {
-    "dev": "vite",
+    "start": "vite --host 0.0.0.0 --port 5173",
+    "dev": "vite --host 0.0.0.0 --port 5173",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0 --port 4173"
   },
   "devDependencies": {
     "vite": "^5.4.11"

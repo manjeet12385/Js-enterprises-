@@ -1,5 +1,5 @@
 // KMSJ Interiors - Luxury Turnkey Interior Architecture & Design Studio
-// Client-side interactions: Hero Slider, Portfolio Filter, Before & After Comparison, Consultation
+// Client-side interactions: Hero Slider, Portfolio Filter, Consultation
 
 let currentSlide = 0;
 let slideInterval = null;
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   initSearchOverlay();
   initMobileDrawer();
-  initBeforeAfterSlider();
 });
 
 // 1. Hero Slideshow
@@ -132,56 +131,17 @@ function filterProducts(category) {
   filterPortfolio(category);
 }
 
-// 3. Before & After Transformation Comparison Slider
-function initBeforeAfterSlider() {
-  const range = document.getElementById('baRangeSlider');
-  const wrapper = document.getElementById('baWrapper');
-  const beforeImg = document.querySelector('#baBeforeLayer .ba-img');
-  
-  function syncImgWidth() {
-    if (wrapper && beforeImg) {
-      beforeImg.style.width = `${wrapper.offsetWidth}px`;
-    }
-  }
-
-  syncImgWidth();
-  window.addEventListener('resize', syncImgWidth);
-
-  if (range) {
-    updateBeforeAfter(range.value);
-  }
-}
-
-function updateBeforeAfter(val) {
-  const beforeLayer = document.getElementById('baBeforeLayer');
-  const handle = document.getElementById('baHandle');
-  if (beforeLayer) {
-    beforeLayer.style.width = `${val}%`;
-  }
-  if (handle) {
-    handle.style.left = `${val}%`;
-  }
-}
-
-// 4. Prefill Consultation Form with Project Details
+// 3. Prefill Consultation Form with Project Details
 function prefillConsultation(projectName) {
   const messageInput = document.getElementById('eqMessage');
   const serviceSelect = document.getElementById('eqService');
 
   if (messageInput) {
-    messageInput.value = `I am interested in scheduling a design walkthrough and estimate for a project inspired by: ${projectName}.`;
+    messageInput.value = '';
   }
 
   if (serviceSelect) {
-    if (projectName.toLowerCase().includes('kitchen')) {
-      serviceSelect.value = 'Contemporary Modular Kitchen (Blum Architecture)';
-    } else if (projectName.toLowerCase().includes('suite') || projectName.toLowerCase().includes('wardrobe')) {
-      serviceSelect.value = 'Bespoke Walk-in & Sliding Glass Wardrobes';
-    } else if (projectName.toLowerCase().includes('ceiling')) {
-      serviceSelect.value = 'Saint-Gobain False Ceiling & Magnetic Track Lights';
-    } else {
-      serviceSelect.value = 'Turnkey 3BHK / 4BHK Luxury Residence';
-    }
+    serviceSelect.value = '';
   }
 
   const contactSection = document.getElementById('contact');
@@ -447,7 +407,6 @@ function quickFilterHub(term) {
 // Compatibility stubs for any remnants
 window.filterPortfolio = filterPortfolio;
 window.filterProducts = filterProducts;
-window.updateBeforeAfter = updateBeforeAfter;
 window.prefillConsultation = prefillConsultation;
 window.filterDirectory = filterDirectory;
 window.handleDirectorySearch = handleDirectorySearch;
